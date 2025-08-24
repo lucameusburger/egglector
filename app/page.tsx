@@ -310,70 +310,70 @@ export default function Home() {
           {/* Overlay images - positioned absolutely to match the base image */}
           <Image
             src={`/eggs/images/egg_a1${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.a1 ? "opacity-100" : (hoverStates.a1 && !recentlyRemoved.a1) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.a1 ? "opacity-100" : (hoverStates.a1 && !recentlyRemoved.a1) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_a1"
             fill
           />
           <Image
             src={`/eggs/images/egg_a2${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.a2 ? "opacity-100" : (hoverStates.a2 && !recentlyRemoved.a2) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.a2 ? "opacity-100" : (hoverStates.a2 && !recentlyRemoved.a2) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_a2"
             fill
           />
           <Image
             src={`/eggs/images/egg_b1${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.b1 ? "opacity-100" : (hoverStates.b1 && !recentlyRemoved.b1) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.b1 ? "opacity-100" : (hoverStates.b1 && !recentlyRemoved.b1) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_b1"
             fill
           />
           <Image
             src={`/eggs/images/egg_b2${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.b2 ? "opacity-100" : (hoverStates.b2 && !recentlyRemoved.b2) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.b2 ? "opacity-100" : (hoverStates.b2 && !recentlyRemoved.b2) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_b2"
             fill
           />
           <Image
             src={`/eggs/images/egg_c1${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.c1 ? "opacity-100" : (hoverStates.c1 && !recentlyRemoved.c1) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.c1 ? "opacity-100" : (hoverStates.c1 && !recentlyRemoved.c1) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_c1"
             fill
           />
           <Image
             src={`/eggs/images/egg_c2${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.c2 ? "opacity-100" : (hoverStates.c2 && !recentlyRemoved.c2) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.c2 ? "opacity-100" : (hoverStates.c2 && !recentlyRemoved.c2) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_c2"
             fill
           />
           <Image
             src={`/eggs/images/egg_d1${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.d1 ? "opacity-100" : (hoverStates.d1 && !recentlyRemoved.d1) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.d1 ? "opacity-100" : (hoverStates.d1 && !recentlyRemoved.d1) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_d1"
             fill
           />
           <Image
             src={`/eggs/images/egg_d2${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.d2 ? "opacity-100" : (hoverStates.d2 && !recentlyRemoved.d2) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.d2 ? "opacity-100" : (hoverStates.d2 && !recentlyRemoved.d2) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_d2"
             fill
           />
           <Image
             src={`/eggs/images/egg_e1${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.e1 ? "opacity-100" : (hoverStates.e1 && !recentlyRemoved.e1) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.e1 ? "opacity-100" : (hoverStates.e1 && !recentlyRemoved.e1) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_e1"
             fill
           />
           <Image
             src={`/eggs/images/egg_e2${resolution}.png`}
-            className={`absolute inset-0 object-contain  ${eggStates.e2 ? "opacity-100" : (hoverStates.e2 && !recentlyRemoved.e2) ? "opacity-50" : "opacity-0"
+            className={`absolute inset-0 object-contain  ${eggStates.e2 ? "opacity-100" : (hoverStates.e2 && !recentlyRemoved.e2) ? "opacity-0 md:opacity-50" : "opacity-0"
               }`}
             alt="egg_e2"
             fill
