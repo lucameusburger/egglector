@@ -8,6 +8,8 @@ import Image from "next/image";
 
 export default function Home() {
 
+  const [resolution, setResolution] = useState<"_reduced" | "">("_reduced");
+
   const [eggStates, setEggStates] = useState({
     a1: false,
     a2: false,
@@ -298,7 +300,7 @@ export default function Home() {
 
           {/* Base image */}
           <Image
-            src="/eggs/images/egg_none_reduced.png"
+            src={`/eggs/images/egg_none${resolution}.png`}
             alt="egg container"
             fill
             className="object-contain"
@@ -307,70 +309,70 @@ export default function Home() {
 
           {/* Overlay images - positioned absolutely to match the base image */}
           <Image
-            src="/eggs/images/egg_a1_reduced.png"
+            src={`/eggs/images/egg_a1${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.a1 ? "opacity-100" : (hoverStates.a1 && !recentlyRemoved.a1) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_a1"
             fill
           />
           <Image
-            src="/eggs/images/egg_a2_reduced.png"
+            src={`/eggs/images/egg_a2${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.a2 ? "opacity-100" : (hoverStates.a2 && !recentlyRemoved.a2) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_a2"
             fill
           />
           <Image
-            src="/eggs/images/egg_b1_reduced.png"
+            src={`/eggs/images/egg_b1${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.b1 ? "opacity-100" : (hoverStates.b1 && !recentlyRemoved.b1) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_b1"
             fill
           />
           <Image
-            src="/eggs/images/egg_b2_reduced.png"
+            src={`/eggs/images/egg_b2${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.b2 ? "opacity-100" : (hoverStates.b2 && !recentlyRemoved.b2) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_b2"
             fill
           />
           <Image
-            src="/eggs/images/egg_c1_reduced.png"
+            src={`/eggs/images/egg_c1${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.c1 ? "opacity-100" : (hoverStates.c1 && !recentlyRemoved.c1) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_c1"
             fill
           />
           <Image
-            src="/eggs/images/egg_c2_reduced.png"
+            src={`/eggs/images/egg_c2${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.c2 ? "opacity-100" : (hoverStates.c2 && !recentlyRemoved.c2) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_c2"
             fill
           />
           <Image
-            src="/eggs/images/egg_d1_reduced.png"
+            src={`/eggs/images/egg_d1${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.d1 ? "opacity-100" : (hoverStates.d1 && !recentlyRemoved.d1) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_d1"
             fill
           />
           <Image
-            src="/eggs/images/egg_d2_reduced.png"
+            src={`/eggs/images/egg_d2${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.d2 ? "opacity-100" : (hoverStates.d2 && !recentlyRemoved.d2) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_d2"
             fill
           />
           <Image
-            src="/eggs/images/egg_e1_reduced.png"
+            src={`/eggs/images/egg_e1${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.e1 ? "opacity-100" : (hoverStates.e1 && !recentlyRemoved.e1) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_e1"
             fill
           />
           <Image
-            src="/eggs/images/egg_e2_reduced.png"
+            src={`/eggs/images/egg_e2${resolution}.png`}
             className={`absolute inset-0 object-contain  ${eggStates.e2 ? "opacity-100" : (hoverStates.e2 && !recentlyRemoved.e2) ? "opacity-50" : "opacity-0"
               }`}
             alt="egg_e2"
@@ -381,8 +383,9 @@ export default function Home() {
 
 
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        Egglector the egg-selector by <a href="https://meusburger.io/" target="_blank" rel="noopener noreferrer">Luca Meusburger</a>
+      <footer className="flex flex-wrap items-center justify-between w-full">
+        <div>Egglector the egg-selector by <a href="https://meusburger.io/" target="_blank" className="hover:underline" rel="noopener noreferrer">Luca Meusburger</a></div>
+        <button className="hover:underline" onClick={() => setResolution(resolution === "_reduced" ? "" : "_reduced")}>{resolution === "_reduced" ? "Full Resolution" : "Reduced Resolution"}</button>
       </footer>
     </div>
   );
